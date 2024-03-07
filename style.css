@@ -1,0 +1,203 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  .logo>h1{
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .ri-graduation-cap-fill{
+    color: #F97316;
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+  }
+  ul>li{
+    list-style: none;
+  }
+  li>a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #4b4b4b;
+    transition: all 0.3s ease-in-out;
+  }
+  li>a:hover{
+    color: #F97316;
+  }
+  .hamburger{
+    display: none;
+  }
+  @media screen and (max-width:769px){
+    .hamburger{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .links{
+        display: none;
+    }
+  }
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
+.hero-image>img{
+    width: 500px;
+    filter: drop-shadow(0 25px 25px rgba(255, 178, 69, 0.272));
+    border-radius: 10px;
+}
+.hero-text{
+    width: 500px;
+}
+.hero-text > h1{
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 800;
+}
+.hero-text>p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.1em;
+}
+.button-1{
+    background-color: #F97316;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+  }
+  .button-2{
+    background-color: transparent;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+  }
+@media screen and (max-width:1111px) {
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+}  
+@media screen and (max-width:568px){
+    .hero-text{
+        width: 350px;
+    }
+    .hero-text > h1{
+        font-size: 3rem; /* 48px */
+        line-height: 1;
+        font-weight: 800;
+    }
+    .hero-image>img{
+        width: 400px;
+    }
+}
+
+.first-to{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .first-to-text{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.1em;
+    padding-left: 20px;
+    border-left: 3px solid grey;
+  }
+  @media screen and (max-width:568px){
+    .first-to-image>img{
+        width: 100px;
+    }
+    .first-to-text{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1em;
+    }
+  }
+  @media screen and (max-width:400px){
+    .hero-image>img{
+        width: 350px;
+    }
+  }
+  .first-sem{
+    width: 350px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 40px 0px;
+  }
+  .upper-nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0px;
+  }
+  .image-section>img{
+    width: 50px;
+  }
+  .upper-section{
+    padding: 15px 20px;
+  }
+  .upper-text>p{
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .button-section{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 15px 0px;
+  }
+  .button-section>button{
+    padding: 5px 10px;
+    background-color: #F97316;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+  .crousels{
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 40px;
+  }
+  .crousels:hover .crousels-slide{
+    animation-play-state: paused;
+  }
+  .crousels-slide{
+    display: flex;
+    gap: 90px;
+    display: inline-flex;
+    animation: 35s slide infinite linear;
+  }
+  .cs-2{
+    margin-left: 90px;
+  }
+  @keyframes slide {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }
